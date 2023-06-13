@@ -19,7 +19,7 @@ for s_val in sigma_vals:
 
 np.save('index',index)
 print('No of runs = ',len(index))
-fname = "adaptive_higher.py"
+fname = "simulation.py"
 
 uci.deploy(fname)
 
