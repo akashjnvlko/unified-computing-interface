@@ -79,7 +79,43 @@ Please make sure these dependencies are installed before using the script.
 
 3. Monitor the progress of the UCI computation and retrieve the output files from the cluster.
 
+
+
 ---
+# Job Script Documentation
+
+This documentation provides an overview and usage instructions for the `job.py` script, which is part of the Unified Computing Interface (UCI) framework. The script is responsible for configuring and deploying a distributed parameter scanning computation across a cluster of machines.
+
+## Configuration
+
+The configuration section of the `job.py` script is where you can customize the parameters and settings for your computation. Below are the key elements of the configuration:
+
+### Index File Generation
+
+The index file contains the combinations of parameter values to be scanned during the computation. In this script, the index file is generated based on two parameters: `sigma` and `q`. You can modify the range and step size of these parameters to suit your specific needs.
+
+### Saving Parameter Arrays
+
+The parameter arrays, such as `sigma_vals` and `q_vals`, are saved as separate files using the `np.save()` function. These arrays can be useful for reference or further analysis after the computation is complete.
+
+### Deployment
+
+The `fname` variable specifies the name of the code file that contains the computation logic for each parameter combination. Ensure that you provide the correct file name and that the file exists in the same directory as the `job.py` script.
+
+## Usage
+
+To run the `job.py` script and initiate the parameter scanning computation, follow these steps:
+
+1. Make sure you have installed the necessary dependencies, including NumPy, UCI, and any other dependencies required by your code file.
+
+2. Open a terminal or command prompt and navigate to the directory where the `job.py` script is located.
+
+3. Execute the following command to start the computation:
+
+   ```bash
+   python job.py
+
+
 
 ## Contributing
 
