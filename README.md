@@ -1,15 +1,15 @@
-# Generalized Distributed Computation Approach for Parameter Scanning
+# Generalized UCI (Unified Computing Interface) for Parameter Scanning
 
-**Author**: Akash Yadav 
+**Author**: Akash Yadav PHD232006  
 **Email**: akashyadav23@iisertvm.ac.in
 
 ---
 
 ## General Description
 
-The Generalized Distributed Computation Approach for Parameter Scanning is a utility script that enables distributed computing for parameter scanning tasks. It provides a generalized framework that can be used for various applications and can be easily integrated into other projects.
+The Generalized UCI (Unified Computing Interface) for Parameter Scanning is a utility script that enables distributed computing for parameter scanning tasks. It provides a generalized framework that can be used for various applications and can be easily integrated into other projects.
 
-The script utilizes SSH and SFTP protocols to distribute tasks among multiple systems in a cluster. It supports parallel execution of tasks and provides progress monitoring capabilities. The script is designed to be user-friendly and can be configured with the necessary system details.
+The script utilizes SSH and SFTP protocols to distribute tasks among multiple systems in a cluster. It supports parallel execution of tasks, providing a significant speedup for large-scale parameter scanning tasks. The script also includes features for progress monitoring, task allocation, and result retrieval.
 
 ---
 
@@ -18,7 +18,8 @@ The script utilizes SSH and SFTP protocols to distribute tasks among multiple sy
 - Distributed computation for parameter scanning tasks
 - Support for parallel execution using multiple systems
 - Progress monitoring and status updates
-- Easy configuration of cluster details
+- Task allocation based on system resources
+- Result retrieval from the cluster
 - Generalized framework for various applications
 - Importable as a module for integration into other projects
 
@@ -30,10 +31,10 @@ The script utilizes SSH and SFTP protocols to distribute tasks among multiple sy
 
 The script requires the following dependencies:
 
-- paramiko
-- numpy
-- multiprocessing
-- tqdm
+- `paramiko` for SSH and SFTP communication
+- `numpy` for array manipulation
+- `multiprocessing` for parallel execution
+- `tqdm` for progress monitoring
 
 Please make sure these dependencies are installed before using the script.
 
@@ -53,8 +54,8 @@ Please make sure these dependencies are installed before using the script.
 
 ### Configuration
 
-1. Open the script file `distributed_computation.py` in a text editor.
-2. Modify the `users`, `pwds`, and `hosts` lists to include the details of your systems.
+1. Open the script file `uci.py` in a text editor.
+2. Modify the `users`, `pwds`, and `hosts` lists to include the details of your systems. Each entry in the lists corresponds to a system in the cluster.
 3. Save the changes.
 
 ---
@@ -64,28 +65,28 @@ Please make sure these dependencies are installed before using the script.
 1. Import the script as a module in your project:
 
     ```python
-    import distributed_computation
+    import uci
     ```
 
 2. Call the `deploy` function, passing the name of the code file to be executed:
 
     ```python
-    distributed_computation.deploy("code_file.py")
+    uci.deploy("code_file.py")
     ```
 
-3. Monitor the progress of the distributed computation and retrieve the output files from the cluster.
+3. Monitor the progress of the UCI computation and retrieve the output files from the cluster.
 
 ---
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please create an issue or submit a pull request. Follow the guidelines provided in the repository for contributing.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the [GNU General Public License v3.0](LICENSE). You are free to use, modify, and distribute the code in accordance with the terms of the license.
 
 ---
 
