@@ -1,4 +1,4 @@
-# Generalized UCI (Unified Computing Interface) for Parameter Scanning
+# Unified Computing Interface (UCI) for Parameter Scanning
 
 **Author**: Akash Yadav
 **Email**: akashyadav23@iisertvm.ac.in
