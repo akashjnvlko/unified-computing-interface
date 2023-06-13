@@ -1,11 +1,5 @@
 # Unified Computing Interface (UCI) for Parameter Scanning
 
-**Author**: Akash Yadav
-
-**Email**: akashyadav23@iisertvm.ac.in
-
----
-
 ## General Description
 
 The Generalized UCI (Unified Computing Interface) for Parameter Scanning is a utility script that enables distributed computing for parameter scanning tasks. It provides a generalized framework that can be used for various applications and can be easily integrated into other projects.
