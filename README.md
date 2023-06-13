@@ -8,9 +8,9 @@ Parameter scanning tasks often involve running a computational model or algorith
 
 The UCI script addresses this challenge by leveraging the power of multiple systems in a cluster. It distributes the parameter scanning tasks across the cluster, allowing them to be executed in parallel. This significantly reduces the overall execution time and improves efficiency.
 
-By using the UCI, researchers, scientists, and engineers can accelerate their parameter scanning experiments, enabling them to explore a larger parameter space, optimize models, analyze sensitivity, or conduct parameter-driven simulations more effectively. The script's flexibility and generalization make it suitable for various domains, including scientific research, data analysis, optimization, machine learning, and more.
+By using the UCI, researchers, scientists, and engineers can accelerate their parameter scanning experiments, enabling them to explore a larger parameter space, optimize models, analyze sensitivity, or conduct parameter-driven simulations more effectively. The script's flexibility and generalization make it suitable for various domains, including scientific research, data analysis, optimization, and more.
 
-Furthermore, the UCI script is designed to be user-friendly and easily adaptable. It provides functionalities for task allocation, progress monitoring, and result retrieval, simplifying the management of distributed computations. The script can also be imported as a module, allowing seamless integration into existing projects and workflows.
+Furthermore, the UCI script is designed to be user-friendly and easily adaptable. It provides functionalities for task allocation, progress monitoring, and result retrieval, simplifying the management of distributed computations. The uci script can also be imported as a module, allowing seamless integration into existing projects and workflows.
 
 With the Generalized UCI for Parameter Scanning, researchers can harness the collective computational power of a cluster, unlocking new possibilities and accelerating their parameter-based investigations.
 
@@ -77,14 +77,14 @@ Please make sure these dependencies are installed before using the script.
     uci.deploy("code_file.py")
     ```
 
-3. Monitor the progress of the UCI computation and retrieve the output files from the cluster.
+3. Monitor the progress of the UCI computation and retrieval of the output files from the cluster.
 
 
 
 ---
 # Job Script 
 
-This documentation provides an overview and usage instructions for the `job.py` script, which is part of the Unified Computing Interface (UCI) framework. The script is responsible for configuring and deploying a distributed parameter scanning computation across a cluster of machines.
+This documentation provides an overview and usage instructions for the `job.py` script, which is essntial for  utilizing of the Unified Computing Interface (UCI) framework. The script is responsible for configuring and deploying a distributed parameter scanning computation across a cluster of machines.
 
 ## Configuration
 
@@ -120,7 +120,7 @@ To run the `job.py` script and initiate the parameter scanning computation, foll
 
 ## Overview
 
-The simulation script is designed to perform parallel simulations using the multiprocessing module in Python. It loads a task file, specifies the folder to save the simulation data, and utilizes multiprocessing to process the assigned tasks concurrently.
+The simulation script is designed to perform simulation using the multiprocessing module in Python. It loads a task file, specifies the folder to save the simulation data, and utilizes multiprocessing to process the assigned tasks concurrently.
 
 ## Configuration
 
