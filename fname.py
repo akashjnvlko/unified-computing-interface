@@ -20,7 +20,7 @@ def simulate(params):
     .
     .
     save_path = path + str(sigma) + "_" + str(q)
-    np.save(save_path, sync_vals)\
+    np.save(save_path, sync_vals)
     
     
 # # using multiprocessing to process the assigned task
