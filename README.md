@@ -1,6 +1,6 @@
 # Generalized Distributed Computation Approach for Parameter Scanning
 
-Author: Akash Yadav PHD232006
+Author: Akash Yadav
 Email: akashyadav23@iisertvm.ac.in
 
 ## General Description
