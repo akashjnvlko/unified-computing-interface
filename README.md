@@ -10,7 +10,15 @@
 
 The Generalized UCI (Unified Computing Interface) for Parameter Scanning is a utility script that enables distributed computing for parameter scanning tasks. It provides a generalized framework that can be used for various applications and can be easily integrated into other projects.
 
-The script utilizes SSH and SFTP protocols to distribute tasks among multiple systems in a cluster. It supports parallel execution of tasks, providing a significant speedup for large-scale parameter scanning tasks. The script also includes features for progress monitoring, task allocation, and result retrieval.
+Parameter scanning tasks often involve running a computational model or algorithm with different input parameters to explore the behavior and output variations. However, running these tasks sequentially on a single machine can be time-consuming and inefficient, especially for large-scale parameter sets.
+
+The UCI script addresses this challenge by leveraging the power of multiple systems in a cluster. It distributes the parameter scanning tasks across the cluster, allowing them to be executed in parallel. This significantly reduces the overall execution time and improves efficiency.
+
+By using the UCI, researchers, scientists, and engineers can accelerate their parameter scanning experiments, enabling them to explore a larger parameter space, optimize models, analyze sensitivity, or conduct parameter-driven simulations more effectively. The script's flexibility and generalization make it suitable for various domains, including scientific research, data analysis, optimization, machine learning, and more.
+
+Furthermore, the UCI script is designed to be user-friendly and easily adaptable. It provides functionalities for task allocation, progress monitoring, and result retrieval, simplifying the management of distributed computations. The script can also be imported as a module, allowing seamless integration into existing projects and workflows.
+
+With the Generalized UCI for Parameter Scanning, researchers can harness the collective computational power of a cluster, unlocking new possibilities and accelerating their parameter-based investigations.
 
 ---
 
