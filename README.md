@@ -82,7 +82,7 @@ Please make sure these dependencies are installed before using the script.
 
 
 ---
-# Job Script Documentation
+# Job Script 
 
 This documentation provides an overview and usage instructions for the `job.py` script, which is part of the Unified Computing Interface (UCI) framework. The script is responsible for configuring and deploying a distributed parameter scanning computation across a cluster of machines.
 
@@ -115,7 +115,45 @@ To run the `job.py` script and initiate the parameter scanning computation, foll
    ```bash
    python job.py
 
+---
+# Simulation Script 
 
+## Overview
+
+The simulation script is designed to perform parallel simulations using the multiprocessing module in Python. It loads a task file, specifies the folder to save the simulation data, and utilizes multiprocessing to process the assigned tasks concurrently.
+
+## Configuration
+
+Before running the script, ensure that you have the necessary dependencies installed, including NumPy and the multiprocessing module.
+
+### Task File
+
+The script expects a task file (`task.npy`) containing the parameter combinations for the simulations. The task file should be a NumPy array where each row represents a set of parameters. Ensure that you have the `task.npy` file available in the same directory as the script.
+
+### Output Folder
+
+The simulation data will be saved in a folder specified by the `path` variable. By default, the folder name is set to `'DATA/'`. If the folder already exists, it will be removed and recreated to ensure a clean output directory for the new simulations. If the folder does not exist, it will be created automatically.
+
+## Simulation Function
+
+The `simulate(params)` function is responsible for executing the simulations. It takes in a set of parameters, `params`, and performs the simulation accordingly. Replace the placeholder code (`...`) within the function with your simulation logic.
+
+The function saves the simulation results in separate NumPy files based on the parameter values. The file name is constructed using the `sigma` and `q` values, and the files are saved in the `path` folder.
+
+## Execution
+
+To execute the simulation script, follow these steps:
+
+1. Ensure that you have the necessary dependencies installed, including NumPy and the multiprocessing module.
+
+2. Place the `task.npy` file in the same directory as the script.
+
+3. Open a terminal or command prompt and navigate to the directory where the script is located.
+
+4. Execute the following command to start the simulation:
+
+   ```bash
+   python script.py
 
 ## Contributing
 
